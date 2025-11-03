@@ -9,6 +9,7 @@ The project repository contains the following subfolders:
 - ```./src``` which includes all code scripts
 - ```./prompts``` which includes sample prompt files I created for the PDD model
 - ```./outputs``` which is the default folder for testing output files.
+  
 Users might create other subfolders (e.g. ```./docs```) for formatted report and documentation storage.
 
 ## Prerequisites
