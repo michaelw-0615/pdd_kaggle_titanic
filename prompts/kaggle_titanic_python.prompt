@@ -1,0 +1,29 @@
+Create a Python program that performs the following:
+- Construct a model to predict the survival of passengers on the RMS Titanic based on certain input features; 
+- Train the model on a subset of passengers;
+- Use the trained model to predict the survival of another subset of passengers and provide formatted output.
+
+Requirements:
+- In the current directory, read inputs/train.csv as training input. The survival of each passenger is described in the "Survived" column with 1 as survived and 0 as perished
+- Freely choose features from inputs/train.csv, feature transformation strategies and modeling methods to build the model
+- Train the model locally and use GPU resources if needed
+- The model should achieve at least 0.90 cross-validation accuracy on the validation dataset
+- After training, test the model on inputs/test.csv by predicting the survival of each passenger in the test set
+- The testing output should be saved in outputs/test_result.csv, a CSV file with two columns--"PassengerId" and "Survived"
+- Prompt the user to download external libraries if needed
+- Keep the code clean and readable
+- Add a brief comment explaining what the program does
+
+Data inputs:
+- All inputs are stored in the ./inputs subfolder
+- inputs/train.csv: the train dataset, with the column "Survived" as output and all other columns as potential input features
+- inputs/test.csv: the test dataset with all input feature columns in train.csv but without "Survived"
+- inputs/gender_submission.csv: the example file that provides the required output format--"PassengerId" and "Survived" for each passenger in test.csv
+
+Output requirements:
+- <filename>.py: The Python script that performs the above functions
+- outputs/test_result.csv: The prediction result of the model on the test dataset, formatted in the same way as inputs/gender_submission.csv
+- Printed progress of training/testing in the CLI
+- Brief summary of the model in the CLI, possibly including model coefficients, validation metrics and so on
+
+The program should be self-contained and runnable with just `python3 filename.py`.
